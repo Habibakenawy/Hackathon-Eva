@@ -34,6 +34,7 @@ int main()
 
     }
     sort(sub.begin(),sub.end());
+    if(s1.size()==0) return 0;
     cout<<sub[sub.size()-1].second;
     return 0;
 }
