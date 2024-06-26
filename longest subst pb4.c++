@@ -11,6 +11,9 @@ int main()
     int counter=0;
     int starting=0;
     cin>>s1;
+     if(s1.size()==0) 
+        cout<<0;
+    else{
     for(int i=0; i<s1.size(); i++)
     {
         if(!vis[s1[i]])
@@ -34,7 +37,6 @@ int main()
 
     }
     sort(sub.begin(),sub.end());
-    if(s1.size()==0) return 0;
-    cout<<sub[sub.size()-1].second;
+    cout<<sub[sub.size()-1].second;}
     return 0;
 }
